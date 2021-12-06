@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation bar!</title>
+        <link rel="stylesheet" href="style.css"/>
+        <style>
+            .button {
+                          background-color:blue;
+                          border: none;
+                          color: white;
+                          padding: 10px 25px;
+                          text-align: center;
+                          text-decoration-style:none;
+                          display: inline-block;
+                          font-size: 16px;
+                          margin: 4px 2px;
+                          cursor: pointer;
+                          position: absolute;
+                          left: 600px;
+                          top:400px;
+                    }
+            #fomo
+            {
+                background-image: url("about.jpg");
+                position: absolute;
+                left:230px;
+                top:90px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav_bar">
+            <ul>
+            <li><a href="homepage.html" >HOME</a></li>
+            <li><a href="aboutus.html" id="onlink">ABOUT US</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            
+            <li><a href="rateus.html">RATE US</a></li>
+            </ul>
+        </div>
+        <div class="main_container" id="fomo">
+            <p></p>
+            <form>
+                <input class="button" type="button" onclick="window.location.href = 'symptom.html';" value="NEED HELP"/>
+            </form>
+        </div>
+    </body>
+    </html>

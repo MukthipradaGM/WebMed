@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation bar!</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="rating.css">
+</head>
+    </head>
+    <body>
+        <div class="nav_bar">
+            <ul>
+            <li><a href="homepage.html" >HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+           
+            <li><a href="rateus.html" id="onlink">RATE US</a></li>
+            </ul>
+        </div>
+        <div class="main_container">
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" onclick=" rateof5()"/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" onclick="rateof4()"/>
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" onclick="rateof3()"/>
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" onclick="rateof2()"/>
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" onclick="rateof1()"/>
+                <label for="star1" title="text">1 stars</label>
+            </div>
+        </div>
+        <script>
+            function rateof5()
+            {
+                a=document.getElementById("star5")
+                if(a.value=="5")
+                {
+                    alert("Hurray!!! Thanks for rating us with 5 stars");
+                }
+
+            }
+            function rateof4()
+            {
+                a=document.getElementById("star4")
+                if(a.value=="4")
+                {
+                    alert("We'll try to keep you happier");
+                }
+
+            }
+            function rateof3()
+            {
+                a=document.getElementById("star3")
+                if(a.value=="3")
+                {
+                    alert("Thank you");
+                }
+
+            }
+            function rateof2()
+            {
+                a=document.getElementById("star2")
+                if(a.value=="2")
+                {
+                    alert("Sorry for the inconvineance");
+                }
+
+            }
+            function rateof1()
+            {
+                a=document.getElementById("star1")
+                if(a.value=="1")
+                {
+                    alert("We are really sorry");
+                }
+
+            }
+        </script>
+    </body>
+    </html>
+
+
+
